@@ -1,0 +1,33 @@
+:root{
+    --main-radius: 5px;
+    --main-padding: 5px;
+
+    --fs-xl: 11.089rem;   /* 177.42px */
+    --fs-h1: 6.854rem;    /* 109.66px */
+    --fs-h2:4.236rem;     /* 67.77px */
+    --fs-h3: 2.618rem;    /* 41.89px */
+    --fs-h4: 1.618rem;    /* 25.89px */
+    --fs-p: 1rem;         /* 16.00px */
+    --fs-xs: 0.618rem;    /* 9.89px */
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}

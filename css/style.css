@@ -1,0 +1,185 @@
+/* splash section */
+
+#container-main {
+    display: grid;
+    height: 100dvh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 8fr .2fr;
+    grid-template-areas: 
+        "main-nav main-nav main-nav main-nav"
+        "main main main main"
+        "down-btn down-btn down-btn down-btn";
+    background-image: url(../public/bground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    background-color: rgba(1, 1, 1, .6);
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav {
+    background-color: rgba(1, 1, 1, .6);
+    grid-area: main-nav;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 5rem 5rem 0 5rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.main-nav a {
+    color: white;
+    font-size: var(--fs-h4);
+}
+
+.main-nav a:hover {
+    border-bottom: 4px solid white;
+}
+
+
+.down-btn {
+    background-color: rgba(1, 1, 1, .6);
+    grid-area: down-btn;
+    display: flex;
+    justify-content: center;
+}
+
+.down-btn svg{
+width: 100%;
+fill:#EF7413;
+}
+
+/* services section */
+
+#container-services {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: .1fr 2fr 1fr;
+    grid-template-areas: 
+        "section-nav section-nav section-nav section-nav"
+        "services services services services"
+        "text text photo photo";
+    background-image: url(../public/boxing-mma-training-in-gym-2023-07-05-01-38-01-utc.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -400px;
+}
+
+.section-nav {
+    background-color:#EF7413;
+    grid-area: section-nav;
+    position: sticky;
+    top: 0;
+}
+
+.section-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.section-nav ul li {
+    margin: 0 2rem 0 2rem;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.section-nav a {
+    color: white;
+    font-size: var(--fs-p);
+}
+
+.section-nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+#services {
+    grid-area: services;
+    color: white;
+}
+
+.text {
+    grid-area: text;
+    background-color: #EF7413;
+    color: white;
+}
+
+.text {
+    padding: 2rem;
+}
+
+.text h4 {
+    font-size: var(--fs-h3);
+    line-height: 2.5rem;
+}
+
+.text p {
+    font-size: var(--fs-p);
+    padding-top: 2rem;
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 3840px) {
+    .photo img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #container-services {
+        display: grid;
+        height: 100dvh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: .1fr 2fr 1fr;
+        grid-template-areas: 
+            "section-nav section-nav section-nav section-nav"
+            "services services services services"
+            "text text photo photo";
+        background-image: url(../public/boxing-mma-training-in-gym-2023-07-05-01-38-01-utc.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -700px;
+    }
+}
+
+@media only screen and (max-width: 1980px) {
+    .photo img {
+        width: 100%;
+        object-fit: cover;
+    }
+    #container-services {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: .1fr 2fr 1fr;
+        grid-template-areas: 
+            "section-nav section-nav section-nav section-nav"
+            "services services services services"
+            "text text photo photo";
+        background-image: url(../public/boxing-mma-training-in-gym-2023-07-05-01-38-01-utc.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -400px;
+    }
+}

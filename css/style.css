@@ -3,11 +3,11 @@
 #container-main {
     display: grid;
     height: 100dvh;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 8fr .2fr;
     grid-template-areas: 
-        "main-nav main-nav main-nav main-nav"
         "main main main main"
+        "main-nav main-nav main-nav main-nav"
         "down-btn down-btn down-btn down-btn";
     background-image: url(../public/bground.jpg);
     background-repeat: no-repeat;
@@ -21,6 +21,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 20rem;
+
 }
 
 .main-nav {
@@ -31,6 +33,7 @@
 .main-nav ul {
     display: flex;
     justify-content: center;
+
 }
 
 .main-nav ul li {
@@ -49,6 +52,9 @@
     border-bottom: 4px solid white;
 }
 
+.main-nav .nav-list {
+    margin-top: 10rem;
+}
 
 .down-btn {
     background-color: rgba(1, 1, 1, .6);
@@ -68,7 +74,7 @@ fill:#EF7413;
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: .1fr 2fr 1fr;
+    grid-template-rows: .1fr 2fr 2fr;
     grid-template-areas: 
         "section-nav section-nav section-nav section-nav"
         "services services services services"
@@ -76,7 +82,7 @@ fill:#EF7413;
     background-image: url(../public/servicesbground.JPG);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -400px;
+    background-position: 0 -700px;
 }
 
 .section-nav {
@@ -119,67 +125,91 @@ fill:#EF7413;
 }
 
 .text {
-    padding: 2rem;
+    padding: 4em;
 }
 
 .text h4 {
-    font-size: var(--fs-h3);
-    line-height: 2.5rem;
+    font-size: var(--fs-h2);
 }
 
 .text p {
-    font-size: var(--fs-p);
+    font-size: var(--fs-h4);
     padding-top: 2rem;
 }
 
 .photo {
     grid-area: photo;
+    width: 1000%;
+    /* background-image: url(../public/servicesimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .photo img {
     width: 100%;
-    object-fit: cover;
+    /* height: 100%; */
 }
 
-@media only screen and (max-width: 3840px) {
-    .photo img {
-        width: 100%;
-        object-fit: cover;
+
+@media only screen and (max-width: 1980px) {
+    #container-services {
+        background-position: 0 -500px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    /* html {
+        font-size: 12px;
+    } */
+
+    #container-main {
+        display: grid;
+        height: 100dvh;
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr 1fr .1fr;
+        grid-template-areas:
+            "main-nav"
+            "main" 
+            "down-btn";
+        background-image: url(../public/bground.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -600px -100px 0 0;
+    }
+    
+    nav {
+        margin: none;
+        padding: none;
+    }
+
+    .main-nav {
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .main-nav ul {
+        display: block;
+        text-align: center;
+
+    }
+    .main-nav ul li {
+        margin: 0;
+        padding-top: 1rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        z-index: 1;
     }
 
     #container-services {
         display: grid;
         height: 100dvh;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: .1fr 2fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: .1fr 1fr 1fr 1fr;
         grid-template-areas: 
-            "section-nav section-nav section-nav section-nav"
-            "services services services services"
-            "text text photo photo";
-        background-image: url(../public/servicesbground.JPG);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 -700px;
-    }
-}
-
-@media only screen and (max-width: 1980px) {
-    .photo img {
-        width: 100%;
-        object-fit: cover;
-    }
-    #container-services {
-        display: grid;
-        height: 100vh;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: .1fr 2fr 1fr;
-        grid-template-areas: 
-            "section-nav section-nav section-nav section-nav"
-            "services services services services"
-            "text text photo photo";
-        background-image: url(../public/servicesbground.JPG);
-        background-repeat: no-repeat;
-        background-size: cover;
+        "section-nav"
+        "services"
+        "text"
+        "photo";
         background-position: 0 -400px;
     }
 }

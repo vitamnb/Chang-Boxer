@@ -9,7 +9,7 @@
         "main-nav main-nav main-nav main-nav"
         "main main main main"
         "down-btn down-btn down-btn down-btn";
-    background-image: url(/public/bground.jpg);
+    background-image: url(../public/bground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -73,7 +73,7 @@ fill:#EF7413;
         "section-nav section-nav section-nav section-nav"
         "services services services services"
         "text text photo photo";
-    background-image: url(/public/boxing-mma-training-in-gym-2023-07-05-01-38-01-utc.JPG);
+    background-image: url(../public/servicesbground.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -400px;
@@ -156,7 +156,7 @@ fill:#EF7413;
             "section-nav section-nav section-nav section-nav"
             "services services services services"
             "text text photo photo";
-        background-image: url(../public/boxing-mma-training-in-gym-2023-07-05-01-38-01-utc.JPG);
+        background-image: url(../public/servicesimg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 -700px;
@@ -177,7 +177,7 @@ fill:#EF7413;
             "section-nav section-nav section-nav section-nav"
             "services services services services"
             "text text photo photo";
-        background-image: url(../public/boxing-mma-training-in-gym-2023-07-05-01-38-01-utc.JPG);
+        background-image: url(../public/servicesbground.JPG);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 -400px;
